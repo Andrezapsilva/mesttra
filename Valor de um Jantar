@@ -1,0 +1,35 @@
+// lê o valor do jantar
+var jantar = Number(prompt("Valor do Jantar R$: "));
+
+// calculando os dados
+var garcom = jantar * 0.10; 
+//note que no comando acima não escrevemos jantar * 10%
+//isso acontece porque a linguagem de programação não foi criado para entender que 10% é 10 dividido por 100
+//desta forma, o programador já coloca o resultado que equivale a 10% ou seja, 0.1 ou 0.10
+
+var total = jantar + garcom;
+
+// apresenta as respostas
+console.log("Taxa Garçom R$: " + garcom + "\nTotal R$: " + total); 
+//Nota IMPORTANTE: veja que ao executar o comando acima a mensagem será impressa em duas linhas
+//perceba que antes da palavra Total foi adicionado um \n
+// PESQUISE NO GOOGLE QUAL A FUNÇÃO DO \n na programação
+Nesse exemplo, o cálculo da taxa do garçom é uma multiplicação. Porém, para calcular o total, 
+utilizamos a adição. Portanto, a entrada precisa ser convertida. Para facilitar, 
+vamos padronizar nossos programas, definindo que todas as entradas numéricas devem ser convertidas em número.
+Para calcular a taxa do garçom, realizamos uma operação de multiplicação do valor do
+jantar por 0.10. Mas por que por 0.10? Por que 10% é, como falamos: 10 por 100.
+Ou seja, 10 / 100, que resulta em 0.10. Há outras formas de calcular 10%, como dividir o valor por 10.
+Mas, se quisermos calcular 12%, por exemplo, a fórmula de multiplicar o valor por 0.12 continua válida.
+Também o cálculo do valor total pode ser feito a partir do uso de outras fórmulas. Como:
+var total = jantar + (jantar * 0.10); // ou então,
+var total = jantar * 1.10; // desta forma
+Como o valor total é o valor do jantar acrescido de 10% (taxa do garçom), 
+essas duas fórmulas estão igualmente corretas. Na primeira fórmula, o valor 
+total recebe o valor do jantar + o valor do jantar multiplicado pelos 10%. Na segunda,
+o valor total recebe o valor do jantar multiplicado por 1.10. Esse 1.10 é calculado a
+partir da seguinte ideia: multiplicar qualquer valor por 1 resulta no próprio valor. 
+Como queremos adicionar 10%, devemos somar 0.10 ao 1, resultando em 1.10. 
+O importante é você entender uma dessas maneiras. Com a realização dos exercícios,
+você vai aprimorar o entendimento sobre as formas de calcular os dados de saída de
+um programa e aplicá-las de acordo com os problemas a serem solucionados.
