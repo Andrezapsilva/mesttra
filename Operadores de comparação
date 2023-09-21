@@ -1,0 +1,35 @@
+Na programação é muito comum ao escrever códigos para resolver problemas, existir a necessidade de realizarmos comparações entre valores. Quando isto ocorre, podemos utilizar alguns caracteres que irão "operar"/executar essas comparações e nos retornar o resultado. 
+
+Quando analisamos a expressão , podemos perceber que o símbolo ">" quer dizer "o valor da esquerda é maior que o valor da direita". É como se dentro do parênteses estivesse escrito: "número maior que 0". Sendo assim, para cada tipo de comparação, temos um operador diferente, que pode ser utilizado para resolver um determinado problema.(numero > 0)
+
+O resultado de toda e qualquer operação de comparação sempre será um resultado booleano true ou false.
+
+Este é mais um dos tipos de dados que o JavaScript possui. Vimos até agora: 
+
+- Valores inteiros: 10, 60, -60, -97
+
+- Valores decimais: 10.5, 45.45, 95.1, -89.889
+
+- Cordas/Textos: "Rogério de Freitas", "mesttra"
+
+Obs: Para dinifir strings pode-se utilizar tanto aspas " como como apóstrofo '
+
+Veja a tabela abaixo:
+let a = 10
+let b = 10
+let c = 50
+let d = "rogerio"
+let e = "mesttra"
+
+let resultado
+
+resultado = (a < b)      //retorno false
+resultado = (a > b)      //retorna false
+resultado = (a == b)     //retorna true
+resultado = (a != b)     //retorna fase
+resultado = (c >= a)     //retorna true
+resultado = (a <= 10)    //retorna true
+resultado = (a < (b + c))    //retorna true
+resultado = (d == e)         //retorna false
+resultado = (d == 'rogerio') //retorna true
+resultado = (d == 'Rogerio') //retorna false 
