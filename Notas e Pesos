@@ -1,0 +1,13 @@
+
+var nota1, nota2, nota3
+var resultado 
+
+nota1 = Number(prompt("Digite a nota 1: ")) 
+nota2 = Number(prompt("Digite a nota 2: "))
+nota3 = Number(prompt("Digite a nota 3: "))
+
+//media ponderada é a soma dos valores multiplicados pelos seus pesos
+//divido pela soma dos pesos
+resultado = ((nota1 * 1) + (nota2 * 2) + (nota3 * 3)) / 6
+
+console.log("Media ponderada: " + resultado) //soma
