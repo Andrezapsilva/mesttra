@@ -1,0 +1,7 @@
+var peso
+
+peso = Number(prompt("Digite o seu peso: "))
+
+console.log("Caso a pessoa engorde 15% ficara com: ",((peso * 0.15) + peso)," KG")
+console.log("Caso a pessoa engorde 15% ficara com: " + (peso * 1.15) + " KG")
+console.log("Caso a pessoa engorde 20% ficara com: " + (peso * 1.2) + " KG")
