@@ -1,0 +1,10 @@
+
+let percorrerDistancia = 800
+let mediaKmLitro = 9
+let qtdeCombustivel = 80
+
+let veiculoChegaAoDestino
+
+veiculoChegaAoDestino = (percorrerDistancia <= (qtdeCombustivel  * mediaKmLitro))
+
+console.log("Veículo chega até o destino? " + veiculoChegaAoDestino )
