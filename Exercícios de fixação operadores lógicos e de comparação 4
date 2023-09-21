@@ -1,0 +1,10 @@
+let bebida = "pepsi"
+let valorBebida = 5.90
+let valorPipoca = 1.00
+let valorQueTenho = 10.50
+
+let comereiLanche
+
+comereiLanche = ((valorBebida + valorPipoca) <= (valorQueTenho * 0.8)) && (bebida == "coca-cola")
+ 
+console.log("Vou comer o lanche no cinema? " + comereiLanche)
