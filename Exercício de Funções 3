@@ -1,0 +1,30 @@
+Escreva um programa que realize o cálculo do valor de uma prestação em atraso, utilizando a fórmula:
+
+prestacaoEmAtraso = prestação + (prestacao*(juro/100) * mesesEmAtraso)
+
+Você deve obter do usuário o valor da prestação, a quantidade de meses em atraso e a taxa de juros mensal.
+
+O cálculo da prestação deve ser realizado por uma função que receba os parâmetros necessários para o cálculo e retorne o valor final da prestação em atraso.
+
+RESOLUÇÃO:
+let prestacao;
+let mesesEmAtraso;
+let juro;
+let valorPrestacaoCorrigida
+
+prestacao = Number(prompt("Digite o valor da prestação em atraso R$: "));
+mesesEmAtraso = Number(prompt("Quantos meses esta em atraso? "));
+juro = Number(prompt("Qual é a taxa de juros % ao mês? "));
+
+valorPrestacaoCorrigida = calcularValorPrestacao(prestacao,mesesEmAtraso,juro);
+
+console.log("O valor da prestação reajustada é R$: " + valorPrestacaoCorrigida.toFixed(2) );
+
+function calcularValorPrestacao(prestacao,mesesEmAtraso,juro) {
+    let prestacaoEmAtraso;
+
+    prestacaoEmAtraso = (prestacao + (prestacao*(juro/100) * mesesEmAtraso));
+    return prestacaoEmAtraso;
+}
+
+
