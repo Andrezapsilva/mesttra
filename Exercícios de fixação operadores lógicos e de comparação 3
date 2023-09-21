@@ -1,0 +1,10 @@
+let valorPassagemOnibus = 200.40
+let valorQueTenho = 100.00
+let temPassagemOnibus = true
+let temCaronaCarro = true
+
+let vouViajar
+
+vouViajar = (valorPassagemOnibus <= valorQueTenho) && (temPassagemOnibus == true || temCaronaCarro == true)
+
+console.log("Vou viajar? " + vouViajar)
