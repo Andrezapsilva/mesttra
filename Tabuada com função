@@ -1,0 +1,33 @@
+numero = Number(prompt("Digite um número: "))
+
+console.log("Tabuada do + e - para o numero ", numero);
+calcularSomaSubtracao(numero,0)
+calcularSomaSubtracao(numero,1)
+calcularSomaSubtracao(numero,2)
+calcularSomaSubtracao(numero,3)
+calcularSomaSubtracao(numero,4)
+calcularSomaSubtracao(numero,5)
+calcularSomaSubtracao(numero,6)
+calcularSomaSubtracao(numero,7)
+calcularSomaSubtracao(numero,8)
+calcularSomaSubtracao(numero,9)
+
+console.log("Tabuada da / e * para o numero ", numero);
+console.log(numero + " * 0 =  " + (numero * 0) + "            " + numero + " / 0 = nao existe numero divido por 0")
+calcularDivisaoMultiplicao(numero,1)
+calcularDivisaoMultiplicao(numero,2)
+calcularDivisaoMultiplicao(numero,3)
+calcularDivisaoMultiplicao(numero,4)
+calcularDivisaoMultiplicao(numero,5)
+calcularDivisaoMultiplicao(numero,6)
+calcularDivisaoMultiplicao(numero,7)
+calcularDivisaoMultiplicao(numero,8)
+calcularDivisaoMultiplicao(numero,9)
+
+function calcularSomaSubtracao(num, param){
+   console.log(num + " + "+ param +" =  " + (num + param) + "            " + num + " - ",param," = ", Math.abs(numero - param)   )   
+}
+
+function calcularDivisaoMultiplicao(num,param) {
+    console.log(num + " * ",param," =  " + (num * param) + "            " + num + " / ",param," = ", (num / param).toFixed(2))
+}
