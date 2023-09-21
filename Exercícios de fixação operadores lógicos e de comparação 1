@@ -1,0 +1,10 @@
+
+let notaFinal = 50
+let totalAulas = 200 
+let aulasPresentes = 100
+
+let alunoAprovado
+
+alunoAprovado =  (notaFinal >= 60) && (aulasPresentes >= (totalAulas * 0.8))
+
+console.log("Aluno foi aprovado? " + alunoAprovado)
